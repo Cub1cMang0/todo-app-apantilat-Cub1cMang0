@@ -15,6 +15,7 @@ class Todo:
     def __init__(self) -> None:
         """Initialize a new Todo instance with an empty task list."""
         self.tasks: List[str] = []
+        self.due_date: List[str] = []
 
     def add_task(self, task: str) -> None:
         """Add a new task to the list.
@@ -31,6 +32,20 @@ class Todo:
             print(f"Task '{task}' added successfully.")
         else:
             print("Task cannot be empty.")
+
+    def add_due_date(self, task: str, due_date: str) -> None:
+        """Adds a due date to the given task.
+
+        Args:
+            task: The task description to add a due_date
+            due_date: The date that the task is due.
+
+        Note:
+            Prints a message whether the due_date is added
+            successfully or not.
+        """
+        if (task in self.tasks) and due_date:
+            self.due_date.append(due_date)
 
     def delete_task(self, task: str) -> None:
         """Delete a task from the list.

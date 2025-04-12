@@ -24,6 +24,13 @@ def test_add_task() -> None:
     todo.add_task("Test task")
     assert "Test task" in todo.tasks
 
+def test_add_due_date() -> None:
+    """Tests if add_due_date method of the Todo class."""
+    todo = Todo()
+    todo.add_task("Test task")
+    todo.add_due_date("Test task", "Dec 32")
+    assert "Dec 32" in todo.due_date
+
 
 def test_delete_task() -> None:
     """Test the delete_task method of the Todo class.
