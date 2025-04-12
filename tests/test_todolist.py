@@ -29,7 +29,7 @@ def test_add_due_date() -> None:
     todo = Todo()
     todo.add_task("Test task")
     todo.add_due_date("Test task", "Dec 32")
-    assert "Dec 32" in todo.due_date
+    assert "Dec 32" in todo.due_dates
 
 
 def test_delete_task() -> None:

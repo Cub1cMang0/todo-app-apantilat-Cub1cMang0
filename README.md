@@ -27,6 +27,7 @@ The application currently provides the following core functionality:
 
 - **Task Management**
   - Add new tasks to the list
+  - Add due dates to tasks
   - Delete existing tasks
   - View all tasks with numbered list
   - Input validation for empty tasks
